@@ -1,0 +1,34 @@
+{
+    "name": "asika/object-metadata",
+    "type": "library",
+    "description": "PHP Global Object Metadata Management",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Asika\\ObjectMetadata\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asika\\ObjectMetadata\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Simon Asika",
+            "email": "asika32764@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=8.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.5"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
