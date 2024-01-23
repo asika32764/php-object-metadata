@@ -101,14 +101,29 @@ rich object and has the capacity to all ORM to get another objects.
 
 ```php
 $orm->on('entity.prepare', function (object $entity, ORM $orm) {
-    ObjectMetadata::getInstance('orm')->set($entity, 'orm', $orm);
+    ObjectMetadata::getInstance('db')->set($entity, 'orm', $orm);
 });
 
+class Article 
+{
+    // ...
+
+    // Article can use ObjectMetadata to get ORM instance.
+    public function getComments() {
+        $orm = ObjectMetadata::getInstance('db')->get($this, 'orm');
+        
+        return $orm->from(Comment::class)
+            ->where('article_id', $this->getId())
+            ->all();
+    }
+}
+
+// Now we can test it
 $article = $orm->createEntity(Article::class);
 
 $item = $orm->createOne($item);
 
-// Now Article is able to call ORM to get another items from DB
+// Article is able to call ORM to get another items from DB
 $item->getComments();
 $item->getAuthor();
 $item->getTags();
