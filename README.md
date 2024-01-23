@@ -1,11 +1,13 @@
 # PHP Object Metadata
 
-<img alt="GitHub" src="https://img.shields.io/github/license/asika32764/php-object-metadata?style=flat-square">
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/asika32764/php-object-metadata/test-php.yml?label=test&style=flat-square">
-<img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/asika/object-metadata?style=flat-square">
-<a href="https://packagist.org/packages/asika/object-metadata">
-    <img alt="Packagist Version" src="https://img.shields.io/packagist/v/asika/object-metadata?style=flat-square">
-</a>
+<p>
+    <img alt="GitHub" src="https://img.shields.io/github/license/asika32764/php-object-metadata?style=flat-square">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/asika32764/php-object-metadata/test-php.yml?label=test&style=flat-square">
+    <img alt="Packagist Downloads" src="https://img.shields.io/packagist/dt/asika/object-metadata?style=flat-square">
+    <a href="https://packagist.org/packages/asika/object-metadata">
+        <img alt="Packagist Version" src="https://img.shields.io/packagist/v/asika/object-metadata?style=flat-square">
+    </a>
+</p>
 
 `Object Metadata` is a package to help developer manage custom global object metadata.
 This package use `WeakMap` to control the data mapping with object instances.
